@@ -8,7 +8,7 @@
 
 Крок 1: Клонування репозиторію
 ```bash
-git clone 
+git clone https://github.com/SiracencoSerghei/TS_Guide
 ```
 
 Крок 2: Встановлення залежностей
