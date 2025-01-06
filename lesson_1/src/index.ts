@@ -1,4 +1,5 @@
 import { concatenation } from './concatenation';
+// import { add } from './addNumber'
 
 // type User = {
 //   name: string;
@@ -6,20 +7,24 @@ import { concatenation } from './concatenation';
 // };
 // type size = "small" | "medium" | "large";
 
+
 // add("1", 1); // '11'
 
+//  явна типизація
 // let total: number = 100;
 // let name: string = "Bob";
 // let isActive: boolean = false;
 // let empty: null = null;
 // let undf: undefined = undefined;
 
+//  неявна типизація
 // let age = 10;
+
 // // let age: number = 10
 
 // age = "12";
 
-// const numbers: number[] = [1, 2, 4, 5, 6, 3, 0];
+// const numbers: number[] = [1, 2, 4, 5, 6, 3, 0, ];
 // numbers.push('12')
 
 // const user: { name: string; age: number } = {
@@ -27,10 +32,15 @@ import { concatenation } from './concatenation';
 //   age: 12,
 // };
 
+// // кастомний тип
+// type User = {
+//   name: string;
+//   age: number;
+// }
 // const user: User = {
 //   name: "Bob",
 //   age: 12,
-//   isActive: false,
+//   // isActive: false,
 // };
 
 // user.age = "15";
@@ -38,7 +48,13 @@ import { concatenation } from './concatenation';
 
 // type eventType = "lesson" | "deadline";
 
-// const event: eventType = "homework";
+// const event: eventType = "deadline";
+// const event2: eventType = "homework"
+
+// type size = 'small' | 'medium' | 'large'
+// let big: size = 'big'
+
+// ANY
 
 // let age: any = 10;
 // age = "Bob";
@@ -48,7 +64,6 @@ import { concatenation } from './concatenation';
 // name = "Bob";
 // name.toFixed();
 
-// type size = "small" | "medium" | "large";
 
 // enum Sizes {
 //   small = "small",
@@ -56,13 +71,14 @@ import { concatenation } from './concatenation';
 //   large = "large",
 // }
 
-// const button: size = "large";
+// const button: size = "large"
 
 // const button2: Sizes = Sizes.large;
 
-// function add(num1: number, num2: number): string {
-//   return `${num1}` + `${num2}`;
-// }
+function add(num1: number, num2: number): string {
+  // return num1 + num2
+  return `${num1}` + `${num2}`;
+}
 
 // console.log(add(2, 3));
 
@@ -70,7 +86,7 @@ import { concatenation } from './concatenation';
 //   console.log(num1 + num2);
 // }
 
-// add(2, 3);
+add(2, 3);
 
 // type User = {
 //   name: string;
@@ -110,22 +126,22 @@ import { concatenation } from './concatenation';
 //   },
 // };
 
-type User = {
-  name: string;
-  age: number;
-  role?: string;
-};
+// type User = {
+//   name: string;
+//   age: number;
+//   role?: string;
+// };
 
-const user: User = {
-  name: "bob",
-  age: 12,
-};
+// const user: User = {
+//   name: "bob",
+//   age: 12,
+// };
 
-const admin: User = {
-  name: "John",
-  age: 23,
-  role: "Admin",
-};
+// const admin: User = {
+//   name: "John",
+//   age: 23,
+//   role: "Admin",
+// };
 
 
 // const button = document.querySelector('button')!;

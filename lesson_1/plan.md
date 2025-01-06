@@ -1,4 +1,4 @@
-npm install -g typescript
+npm install -g typescript  
 tsc --init
 tsc
 tsc -w
