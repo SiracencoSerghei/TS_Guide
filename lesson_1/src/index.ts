@@ -1,16 +1,11 @@
 import { concatenation } from './concatenation';
 // import { add } from './addNumber'
 
-// type User = {
-//   name: string;
-//   age: number | string;
-// };
-// type size = "small" | "medium" | "large";
-
-
 // add("1", 1); // '11'
+// add(1,1)
 
 //  явна типизація
+
 // let total: number = 100;
 // let name: string = "Bob";
 // let isActive: boolean = false;
@@ -18,25 +13,30 @@ import { concatenation } from './concatenation';
 // let undf: undefined = undefined;
 
 //  неявна типизація
+
 // let age = 10;
 
 // // let age: number = 10
 
 // age = "12";
 
-// const numbers: number[] = [1, 2, 4, 5, 6, 3, 0, ];
+// const numbers: number[] = [1, 2, 4, 5, 6, 3, 0, false ];
 // numbers.push('12')
+
 
 // const user: { name: string; age: number } = {
 //   name: "Bob",
 //   age: 12,
 // };
 
+
 // // кастомний тип
 // type User = {
 //   name: string;
 //   age: number;
 // }
+
+
 // const user: User = {
 //   name: "Bob",
 //   age: 12,
@@ -54,6 +54,12 @@ import { concatenation } from './concatenation';
 // type size = 'small' | 'medium' | 'large'
 // let big: size = 'big'
 
+
+// type User = {
+//   name: string;
+//   age: number | string;
+// };
+
 // ANY
 
 // let age: any = 10;
@@ -62,8 +68,11 @@ import { concatenation } from './concatenation';
 
 // let name: unknown = 12;
 // name = "Bob";
-// name.toFixed();
+// // name.toFixed();
 
+// =========================
+
+// type size = "small" | "medium" | "large";
 
 // enum Sizes {
 //   small = "small",
@@ -74,6 +83,9 @@ import { concatenation } from './concatenation';
 // const button: size = "large"
 
 // const button2: Sizes = Sizes.large;
+
+// ==================
+
 
 // function add(num1: number, num2: number): string {
 //   // return num1 + num2
@@ -95,6 +107,7 @@ import { concatenation } from './concatenation';
 // function great(user: User): void {
 //   console.log(`Hello ${user.name}`);
 // }
+// great({"name":"Sergio"})
 
 // type User = {
 //   name: string;
@@ -110,26 +123,28 @@ import { concatenation } from './concatenation';
 //   };
 // }
 
-// type Car = {
-//   color: string;
-//   price: number;
-//   currency: string;
-//   start: (color: string) => {};
-// };
+type Car = {
+  color: string;
+  price: number;
+  currency: string;
+  start: (color:string) => {};
+};
 
-// const Car = {
-//   color: "red",
-//   price: 1000,
-//   currency: "UAH",
-//   start(color) {
-//     console.log("Start" + this.color);
-//   },
-// };
+const Car = {
+  color: "red",
+  price: 1000,
+  currency: "UAH",
+  start(color: string) {
+    console.log(`Start ${color}, but actual color is ${this.color}`);
+  },
+};
+
+Car.start("blue")
 
 // type User = {
 //   name: string;
 //   age: number;
-//   role?: string;
+//   role?: string;   # може мати а може не мати...
 // };
 
 // const user: User = {
@@ -141,6 +156,7 @@ import { concatenation } from './concatenation';
 //   name: "John",
 //   age: 23,
 //   role: "Admin",
+//   // tip: 1,
 // };
 
 
