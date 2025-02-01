@@ -75,10 +75,10 @@ import { concatenation } from './concatenation';
 
 // const button2: Sizes = Sizes.large;
 
-function add(num1: number, num2: number): string {
-  // return num1 + num2
-  return `${num1}` + `${num2}`;
-}
+// function add(num1: number, num2: number): string {
+//   // return num1 + num2
+//   return `${num1}` + `${num2}`;
+// }
 
 // console.log(add(2, 3));
 
@@ -86,7 +86,7 @@ function add(num1: number, num2: number): string {
 //   console.log(num1 + num2);
 // }
 
-add(2, 3);
+// add(2, 3);
 
 // type User = {
 //   name: string;
@@ -144,11 +144,11 @@ add(2, 3);
 // };
 
 
-// const button = document.querySelector('button')!;
-// const input = document.querySelector('input')!;
+const button = document.querySelector('button')!;
+const input = document.querySelector('input')!;
 
-// if (button && input) {
-//   button.addEventListener('click', () => {
-//     concatenation(input.value, 'hello!');
-//   });
-// }
+if (button && input) {
+  button.addEventListener('click', () => {
+    concatenation(input.value, 'hello!');
+  });
+}
