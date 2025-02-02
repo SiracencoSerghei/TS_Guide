@@ -1,5 +1,8 @@
 // Index Properties
 
+type StringDictionary = {
+  [key: string]: string;
+}
 
 type Goods = {
   [key: string]: number;
@@ -16,6 +19,19 @@ type FrozenGoods = {
   fish: number;
   berry: number;
 };
+
+// const fruits: Fruits = {
+//   apples: 15,
+//   banana: 30,
+//   orange: 30
+// }
+
+
+// const frozenGoods: FrozenGoods = {
+//   iceCream: 25,
+//   fish: 30,
+//   berry: 10,
+// };
 
 const fruits: Goods = {
   apples: 15,
